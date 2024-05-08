@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+
+    <TextView
+        android:id="@+id/textViewSedanInfo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/sedan_fuel_0_mileage_0"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <Button
+        android:id="@+id/buttonDriveSedan"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Drive Sedan"
+        app:layout_constraintTop_toBottomOf="@id/textViewSedanInfo"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toStartOf="@id/buttonRefuelSedan" />
+
+    <Button
+        android:id="@+id/buttonRefuelSedan"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Refuel Sedan"
+        app:layout_constraintTop_toBottomOf="@id/textViewSedanInfo"
+        app:layout_constraintStart_toEndOf="@id/buttonDriveSedan"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <!-- TextView and Buttons for Motorcycle -->
+    <TextView
+        android:id="@+id/textViewMotorcycleInfo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Motorcycle: Fuel = 0, Mileage = 0"
+        app:layout_constraintTop_toBottomOf="@id/buttonDriveSedan"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <Button
+        android:id="@+id/buttonDriveMotorcycle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Drive Motorcycle"
+        app:layout_constraintTop_toBottomOf="@id/textViewMotorcycleInfo"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toStartOf="@id/buttonRefuelMotorcycle" />
+
+    <Button
+        android:id="@+id/buttonRefuelMotorcycle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Refuel Motorcycle"
+        app:layout_constraintTop_toBottomOf="@id/textViewMotorcycleInfo"
+        app:layout_constraintStart_toEndOf="@id/buttonDriveMotorcycle"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+
+    <TextView
+        android:id="@+id/textViewSUVInfo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="SUV: Fuel = 0, Mileage = 0"
+        app:layout_constraintTop_toBottomOf="@id/buttonDriveMotorcycle"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <Button
+        android:id="@+id/buttonDriveSUV"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Drive SUV"
+        app:layout_constraintTop_toBottomOf="@id/textViewSUVInfo"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toStartOf="@id/buttonRefuelSUV" />
+
+    <Button
+        android:id="@+id/buttonRefuelSUV"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Refuel SUV"
+        app:layout_constraintTop_toBottomOf="@id/textViewSUVInfo"
+        app:layout_constraintStart_toEndOf="@id/buttonDriveSUV"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

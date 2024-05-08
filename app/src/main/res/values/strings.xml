@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name">labtest</string>
+    <string name="sedan_fuel_0_mileage_0">Sedan: Fuel = 0, Mileage = 0</string>
+</resources>
